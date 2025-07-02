@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+        <meta name="viewport" content="width=device-width, initial scale= 1.0;">
+        <style>
+            form {
+                background-color: green;
+                width: 550px;
+                padding: 10px;
+                margin: 100px auto;
+            }
+
+            input {
+                display: block;
+                font-size: 18px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin: 5px auto;
+                height: 45px;
+                width: 100%;
+            }
+
+            select, select option {
+                display: block;
+                font-size: 18px;
+                border-radius: 5px;
+                border: 1px;
+                margin: 5px auto;
+                height: 45px;
+                width: 100%;
+            }
+
+            .radio {
+                display: inline;
+                width: 30px;
+                height: 20px;
+            }
+
+            fieldset{
+                margin: 10px auto;
+            }
+
+            .checkbox {
+                display: inline;
+                width: 110px;
+                margin: 10px auto;
+                height: 20px;
+            }
+
+            textarea {
+                width: 515px;
+                height: 150px;
+                border-radius: 5px;
+                max-height: 300px;
+                font-size: 18px;
+                max-width: 519px;
+            }
+
+            .submit {
+                width: 100px;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 19px;
+            }
+
+            legend{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="Samscon.html" title="Please fill out this form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" placeholder="Enter Firstname" title="Enter your Firstname" required>
+                <input type="text" placeholder="Enter Lastname" title="Enter your Lastname" required>
+                <input type="email" placeholder="Enter Email" title="Enter your Email" required>
+                <input type="password" placeholder="Enter Passward" title="Enter your Passward" required>
+                <input type="tel" placeholder="Phone Number" title="Enter your Phone Number" required>
+
+                <select name="nationality" id="nationality" title="Select your Country" required>
+                    <option value="select your country">Select your Country</option>
+                    <option value="algeria">Algeria</option>
+                    <option value="angola">Angola</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="england">England</option>
+                    <option value="france">France</option>
+                    <option value="finland">Finland</option>
+                    <option value="fiji">Fiji</option>
+                    <option value="germany">Germany</option>
+                    <option value="greece">Greece</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="India">India</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Spain">Spain</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="togo">Togo</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United States">United States</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="zimbabwe">Zimbabwe</option>
+                </select>
+
+                <label for="radio" title="Select your Gender" required><span>Gender :</span></label>
+                <input type="radio" title="Select your Gender" name="sex" value="radio" class="radio" required><span title="Select your Gender">Male</span>
+                <input type="radio" title="Select your Gender" name="sex" value="radio" class="radio"><span title="Select your Gender">Female</span>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Course Details</legend>
+                <select title="Select your course" required>
+                    <option value="select your course">Select your Course</option>
+                    <option value="frontend web application development">Frontend Web Application Development</option>
+                    <option value="backend web application development">backend Web Application Development</option>
+                    <option value="frontend engineering">Frontend Engineering</option>
+                    <option value="backend engineering">Backend Engineering</option>
+                    <option value="ML engineering">ML Engineering</option>
+                    <option value="Software engineering">Software Engineering</option>
+                    <option value="introduction to artificial inteligence">Introduction to Artificial Inteligence</option>
+                    <option value="devops engineering">DevOps Engineering</option>
+                    <option value="Data science">Data Science</option>
+                    <option value="Data Engineering">Data Engineering</option>
+                    <option value="prompt Engineering">Prompt Engineering</option>
+                </select>
+
+                <span>You have experience (choose as applicable)</span><br>
+
+                <input type="checkbox" class="checkbox"><span>Python</span>
+                <input type="checkbox" class="checkbox"><span>Javascript</span>
+                <input type="checkbox" class="checkbox"><span>SQL</span><br>
+                <input type="checkbox" class="checkbox"><span>Go</span>
+                <input type="checkbox" class="checkbox"><span>Java</span>
+                <input type="checkbox" class="checkbox"><span>Rust</span><br>
+                <input type="checkbox" class="checkbox"><span>Typescript</span>
+                <input type="checkbox" class="checkbox"><span>PHP</span>
+                <input type="checkbox" class="checkbox"><span>C#</span><br>
+                <input type="checkbox" class="checkbox"><span>C</span>
+                <input type="checkbox" class="checkbox"><span>Node</span>
+                <input type="checkbox" class="checkbox"><span>HTML</span><br>
+                <input type="checkbox" class="checkbox"><span>CSS</span>
+                <input type="checkbox" class="checkbox"><span>Tailwind</span>
+                <input type="checkbox" class="checkbox"><span>C++</span><br>
+                <select title="Choose session" required>
+                    <option value="choose session">Choose Session</option>
+                    <option value="9am :12pm">9am :12pm</option>
+                    <option value="12pm : 3pm">12pm : 3pm</option>
+                    <option value="3pm : 5pm">3pm : 5pm</option>
+                </select>
+                <textarea placeholder="Type a comment ..." title="Type a comment ..."></textarea>
+            </fieldset>
+            <input type="submit" title="Submit" class="submit" value="Submit" onclick="alert('Succesful!')">
+        </form>
+    </body>
+</html>
