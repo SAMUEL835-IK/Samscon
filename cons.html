@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Form</title>
+        <title>Sign in to Samscon</title>
         <meta name="viewport" content="width=device-width, initial scale= 1.0;">
+        <link rel="icon" href="/images/Logo.png" type="image/x-icon">
         <style>
             form {
                 background-color: green;
                 width: 550px;
                 padding: 10px;
-                margin: 100px auto;
+                margin: 150px auto;
+            }
+
+            body {
+                background-image: url(/images/Logo.png);
             }
 
             input {
@@ -72,13 +77,18 @@
         </style>
     </head>
     <body>
-        <form action="Samscon.html" title="Please fill out this form">
+        <form action="Samscon.html" target="_blank" title="Please fill out this form">
             <fieldset>
                 <legend>Personal Information</legend>
+
                 <input type="text" placeholder="Enter Firstname" title="Enter your Firstname" required>
+
                 <input type="text" placeholder="Enter Lastname" title="Enter your Lastname" required>
+
                 <input type="email" placeholder="Enter Email" title="Enter your Email" required>
+
                 <input type="password" placeholder="Enter Passward" title="Enter your Passward" required>
+
                 <input type="tel" placeholder="Phone Number" title="Enter your Phone Number" required>
 
                 <select name="nationality" id="nationality" title="Select your Country" required>
@@ -147,6 +157,7 @@
             
             <fieldset>
                 <legend>Course Details</legend>
+                
                 <select title="Select your course" required>
                     <option value="select your course">Select your Course</option>
                     <option value="frontend web application development">Frontend Web Application Development</option>
@@ -179,15 +190,20 @@
                 <input type="checkbox" class="checkbox"><span>CSS</span>
                 <input type="checkbox" class="checkbox"><span>Tailwind</span>
                 <input type="checkbox" class="checkbox"><span>C++</span><br>
+
                 <select title="Choose session" required>
                     <option value="choose session">Choose Session</option>
                     <option value="9am :12pm">9am :12pm</option>
                     <option value="12pm : 3pm">12pm : 3pm</option>
                     <option value="3pm : 5pm">3pm : 5pm</option>
                 </select>
+
                 <textarea placeholder="Type a comment ..." title="Type a comment ..."></textarea>
+
             </fieldset>
-            <input type="submit" title="Submit" class="submit" value="Submit" onclick="alert('Succesful!')">
+
+            <input type="submit" title="Submit" class="submit" value="Submit" onclick="alert('Thanks For Signing Up!')" src="mailto:samuelikennaelijah@gmail.com">
+
         </form>
     </body>
 </html>
