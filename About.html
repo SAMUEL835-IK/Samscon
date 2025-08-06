@@ -5,6 +5,37 @@
         <meta name="viewport" content="width=device-width, initial scale= 1.0;">
         <link rel="stylesheet" href="samscon.css">
         <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+        <style>
+            h3 {
+                background-color: gold;
+                color: black;
+                padding: 20px 10px;
+                width: 80%;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 30px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+            }
+
+            a[href="/Time-calcy/calculator.html"] {
+                text-decoration: none;
+                background-color: dimgray;
+                color: aliceblue;
+                padding: 10px;
+                border-radius: 40px;
+            }
+
+            .app {
+                background-color: black;
+                margin: 0;
+                padding: 30px 10px;
+                border: 1px solid white;
+            }
+        </style>
     </head>
     <body style="text-align: center;">
         <header class="head">
@@ -23,9 +54,19 @@
                     <a href="contact.html" id="link">Contact</a>
                 </nav>
             </div>
+            <div class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+
+                <script src="clock.js"></script>
+            </div>
             <div class="burger-icon">
-                <a href="#link">
-                    <img src="/images/Assets/burger-icon.svg" alt="Menu" class="icon">
+                <a href="">
+                    <p class="icon">&#9776;</p>
                 </a>
             </div>
         </header>
@@ -55,6 +96,17 @@
                   <A href="http://www.gametop.com" style="background-color: gold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="dan" title="Get Free games">GAMETOP</A>
                 <HR />
               </div>
+            </section>
+            <section class="app">
+                <h3>
+                    This website was made by Samuel IK (Founder of Samscon)
+                    <span>
+                        <img src="/images/Logo.png" alt="Samscon" title="Samscon">
+                        <img src="/Time-calcy/Logo2.png" alt="Time-calcy" title="Time-calcy">
+                    </span>
+                    To go to Time-calcy tap this button
+                    <a href="/Time-calcy/calculator.html">Time-calcy</a>
+                </h3>
             </section>
             <section class="footer">
                 <div class="footer-content">

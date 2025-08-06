@@ -18,6 +18,7 @@ header {
 nav {
     padding: 25px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 #nav a {
@@ -82,13 +83,14 @@ link {
     font-weight: 900;
     font-size: 35px;
     text-decoration: none;
+    padding: 0 5px;
 }
 .icon:hover {
     background-color: blue;
     padding: 0 5px;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1100px) {
     nav {
         display: none;
     }
@@ -148,7 +150,7 @@ link {
 }
 
 .search-text {
-    background-image: url(/images/Assets/skills.svg);
+    background-image: url(/images/skills.svg);
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -165,7 +167,7 @@ link {
 }
 
 .search-links {
-    background-color: chartreuse;
+    background-color: coral;
     padding: 20px 10px;
     width: 60%;
     display: flex;
@@ -195,7 +197,7 @@ hr {
 }
 
 .code {
-    background-color: coral;
+    background-color: teal;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
@@ -209,7 +211,7 @@ hr {
 }
 
 .engineer {
-    background-color: coral;
+    background-color: teal;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
@@ -218,7 +220,7 @@ hr {
 }
 
 .engineer-content {
-    background-color: chocolate;
+    background-color: aliceblue;
     padding: 15px 10px;
     margin: 10px auto;
     border-radius: 20px;
@@ -230,7 +232,7 @@ hr {
 }
 
 .engineer-content2 {
-    background-color: lime;
+    background-color: aliceblue;
     padding: 15px 10px;
     margin: 10px auto;
     border-radius: 20px;
@@ -278,16 +280,17 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgreen;
+    background-color: black;
     padding: 20px 20px;
     margin: 10px auto;
     width: 90%;
     border-radius: 90px;
+    color: aliceblue;
 }
 
 .game {
-    background-color: darkcyan;
-    margin: auto;
+    background-color: teal;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -440,19 +443,16 @@ hr {
     border-radius: 10px;
     border: 1px solid #ccc;
     margin: 5px auto;
-    height: 45px;
+    height: 50px;
     width: 90%;
-}
-
-.email {
-    width: 90%;
-    height: 150px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px auto;
 }
 
 .dropdown { 
+    display: inline-block;
+    position: relative;
+} 
+ 
+.dropdown-content { 
     display: none; 
     position: absolute; 
     background-color: #f9f9f9; 
@@ -461,7 +461,7 @@ hr {
     z-index: 1; 
 } 
  
-.dropdown a { 
+.dropdown-content a { 
     color: black; 
     padding: 12px 16px; 
     text-decoration: none; 
@@ -469,25 +469,120 @@ hr {
     text-align: left; 
 } 
  
-.dropdown a:hover {background-color: #f1f1f1;} 
+.dropdown-content a:hover {background-color: #f1f1f1;} 
  
-.dropdown:hover { 
+.dropdown:hover .dropdown-content { 
     display: block; 
 }
 
-.dropdown {
-      float: left;
-      overflow: hidden;
+.container {
+    background-color: black;
+    padding: 26px 10px;
+    color: aliceblue;
+}
+
+.container span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.samscon-hero {
+    background-color: teal;
+    color: aliceblue;
+    padding: 30px 20px;
+}
+
+.samscon-hero-content {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.sam {
+    background-color: gold;
+    display: flex;
+    gap: 30px;
+    padding: 40px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sam-text {
+    background-color: coral;
+    padding: 17px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 100px;
+    width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.sam-img {
+    background-color: chocolate;
+    padding: 17px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 80px;
+}
+
+@media (max-width:1024px) {
+    .sam {
+        flex-direction: column;
     }
 
-    .dropdown .icon {
-      cursor: pointer;
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 20px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
+    .sam-img {
+        width: 60%;
     }
+    
+    .sam-text {
+        width: 80%;
+    }
+}
+
+@media (min-width:1000px) {
+    .sam {
+        padding: 40px 100px;
+    }
+}
+
+ul {
+    background-color: navy;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* display: none; */
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* z-index: 999; */
+    margin-left: 0;
+}
+
+ul a {
+    float: left;
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+ul a:hover {
+    color: blue;
+}
+
+.icon:hover {
+    display: block;
+    text-decoration: none;
+}

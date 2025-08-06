@@ -9,7 +9,7 @@
                 background-color: green;
                 width: 550px;
                 padding: 10px;
-                margin: 150px auto;
+                margin: 80px auto;
             }
 
             body {
@@ -74,9 +74,54 @@
             legend{
                 font-size: 20px;
             }
+
+            .container {
+                background-color: black;
+                padding: 20px 10px;
+                color: aliceblue;
+                width: 180px;
+                margin: auto;
+            }
+
+            .container span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                text-align: center;
+                margin: auto;
+            }
+
+            h2 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 28px;
+                font-weight: bold;
+                margin: 20px auto;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            a {
+                width: 20px;
+                display: block;
+                background-color: aliceblue;
+                color: black;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 70px 20px;
+                border-radius: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
+        <a href="Index.html"> x </a>
+
         <form action="Samscon.html" target="_blank" title="Please fill out this form">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -205,5 +250,18 @@
             <input type="submit" title="Submit" class="submit" value="Submit" onclick="alert('Thanks For Signing Up!')" src="mailto:samuelikennaelijah@gmail.com">
 
         </form>
+        
+        <div class="container">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span id="session">AM</span>
+
+            <script src="clock.js"></script>
+        </div>
+
+        <h2>Thank you for your patience</h2>
     </body>
 </html>
