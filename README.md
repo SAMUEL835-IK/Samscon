@@ -1,2 +1,2 @@
-# Samscon
-Website
+# Time-calcy
+Calculator

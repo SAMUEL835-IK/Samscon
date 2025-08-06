@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time-calcy</title>
+        <link rel="icon" href="Logo2.png">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: black;
+                text-align: center;
+                font-size: 26px;
+                color: aliceblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .numbers {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+
+            .numbers .num1, .numbers .num2 {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            input[type="number"] {
+                width: 260px;
+                height: 50px;
+                font-size: 26px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            #add, #subtract, #multiply, #divide, #power {
+                font-size: 22px;
+                background-color: gold;
+                border-radius: 10px;
+                margin-bottom: 40px;
+                width: 50px;
+                height: 50px;
+                margin-top: 20px;
+            }
+
+            .result {
+                margin: 20px auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            #result {
+                width: 400px;
+                height: 90px;
+                border-radius: 20px;
+                background-color: gray;
+                color: aliceblue;
+            }
+
+            @media(max-width:650px) {
+                .numbers {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 40px auto;
+                    padding: 20px 10px;
+                    align-items: center;
+                    gap: 30px;
+                }
+
+                #result {
+                    width: 300px;
+                }
+            }
+
+            h3 {
+                background-color: gold;
+                color: black;
+                padding: 20px 10px;
+                width: 80%;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                margin: 100px auto;
+            }
+
+            h2 {
+                position: relative;
+                background-color: aliceblue;
+                color: black;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                padding: 20px 0;
+                text-align: center;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                bottom: 0;
+            }
+
+            .container {
+                margin: 30px auto;
+                font-size: 30px;
+                font-weight: bold;
+                background-color: aliceblue;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 180px;
+                padding: 10px 5px;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: green;
+                color: aliceblue;
+                padding: 10px;
+                border-radius: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+    
+                <script src="clock.js"></script>
+            </div>
+    
+            <h1>Calculator</h1>
+    
+            <!-- numbers -->
+             <section class="numbers">
+                <div class="num1">
+                    <label>number 1</label>
+                    <input type="number" id="num1">
+                </div>
+                <div class="num2">
+                    <label>number 2</label>
+                    <input type="number" id="num2">
+                </div>
+             </section>
+    
+             <!-- operation -->
+              <section class="operation">
+                <button id="add">+</button>
+                <button id="subtract">-</button>
+                <button id="multiply">x</button>
+                <button id="divide">/</button>
+                <button id="power">^</button>
+            </section>
+            
+            <div style="margin-bottom: 20px;">Answer</div>
+              <!-- result -->
+            <section class="result">
+                <span id="result"></span>
+            </section>
+    
+            <script src="calculator.js"></script>
+            <h3>
+                This website was made by Samuel IK (Founder of Samscon)
+                <span>
+                    <img src="Logo.png" alt="Samscon" title="Samscon">
+                    <img src="Logo2.png" alt="Time-calcy" title="Time-calcy">
+                </span>
+                To go to Samscon tap this button
+                <a href="/Index.html">Samscon</a>
+            </h3>
+            
+        </main>
+        <h2>&copy; Samscon at your service !!!</h2>
+    </body>
+</html>
